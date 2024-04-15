@@ -1,0 +1,45 @@
+h1{text-align: center;
+    font-family: wingdings;
+    font-size: 150;}
+
+    a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 100px;
+        text-align: center;
+        ;padding: 10px;
+        margin: 10px;
+        }
+a:visited{
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+.program{margin:30%;
+color:bisque;
+font-size: 200;}
+
+
+#special{ color:aquamarine;
+text-decoration: wavy;}
+.vscrolling_container { height: 100%; overflow: auto; }
+
+.border {
+    border: 1px solid black;
+ }
+ .margin {
+    margin: 5px;
+ }1
+ #one {
+    width: 100%;
+    height: 100%;
+ }
+ #two {
+    width: 100%;
+    height: 50px;
+ }
+ #three {
+    width: 100px;
+    height: 100%;
+ }
