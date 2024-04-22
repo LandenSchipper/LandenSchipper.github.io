@@ -1,16 +1,16 @@
 h1{text-align: center;
-    font-family: wingdings;
+    font-family: sans-serif;
     font-size: 150;}
 
-    a:link {
-        color: green;
-        background-color: transparent;
-        text-decoration: underline;
-        font-size: 100px;
-        text-align: center;
-        ;padding: 10px;
-        margin: 10px;
-        }
+.link {
+   color: green;
+   background-color: transparent;
+   text-decoration: underline;
+   font-size: 100px;
+   text-align: center;
+   ;padding: 10px;
+   margin: 10px;
+   }
 a:visited{
     color: pink;
     background-color: transparent;
@@ -25,21 +25,22 @@ font-size: 200;}
 text-decoration: wavy;}
 .vscrolling_container { height: 100%; overflow: auto; }
 
-.border {
-    border: 1px solid black;
+.div1 {
+   display: flex;
+   border: 1px solid #ccc;
+   padding: 1%;
+   margin: 1%;
+   box-shadow: inset 2px 5px 20px #555;
+   border-radius: 10;
+   background-color: rgb(231, 185, 129);
  }
- .margin {
-    margin: 5px;
- }1
- #one {
-    width: 100%;
-    height: 100%;
- }
- #two {
-    width: 100%;
-    height: 50px;
- }
- #three {
-    width: 100px;
-    height: 100%;
+
+ .div2 {
+   border: 1px solid #ccc;
+   padding: 2%;
+   background-color: rgb(92, 160, 254);
+   text-align: center;
+   margin: 1%;
+   width:48%;
+   color: rgb(201, 76, 76);
  }
