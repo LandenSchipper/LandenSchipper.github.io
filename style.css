@@ -1,135 +1,90 @@
-h1{text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: sans-serif;
-    font-size: 150;}
+    background-color: #f0f0f0; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
 
-.link {
-   color: green;
-   background-color: transparent;
-   text-decoration: underline;
-   font-size: 100px;
-   text-align: center;
-   ;padding: 10px;
-   margin: 10px;
-   }
-a:visited{
-    color: pink;
-    background-color: transparent;
-    text-decoration: underline;
+/* Head Bar Styling (Monochromatic theme) */
+.head-bar {
+    background-color: #333; /* Darker header for contrast */
+    color: white;
+    padding: 1rem 5%; /* Responsive padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #aaa; /* Lighter shade on hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 5%;
+    max-width: 1200px; /* Optional: cap maximum width for very large screens */
+    margin: 0 auto; /* Center the content */
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+/* Art Showcase Container */
+.art-showcase {
+    display: flex;
+    flex-direction: column; /* Stacks vertically on small screens */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Image Styling */
+.responsive-image {
+    width: 100%; /* Image takes up the full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 70vh; /* Takes up a lot of vertical viewport height */
+    object-fit: cover; /* Ensures image covers area without distortion if container has fixed height */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for the main piece */
+    border-radius: 5px;
+}
+
+/* Description Box Styling (Shading/Value theme) */
+.description-box {
+    background-color: #fff; /* Light value */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    border-left: 5px solid #333; /* Dark value accent */
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .art-showcase {
+        flex-direction: row; /* Arranges horizontally on larger screens */
     }
-.program{margin:30%;
-color:bisque;
-font-size: 200;}
 
+    .responsive-image {
+        width: 60%; /* Image takes more space */
+        max-height: none; /* Remove vertical height constraint on desktop */
+    }
 
-#special{ color:aquamarine;
-text-decoration: wavy;}
-.vscrolling_container { height: 100%; overflow: auto; }
-
-.div1 {
-   display: flex;
-   border: 1px solid #ccc;
-   padding: 1%;
-   margin: 1%;
-   box-shadow: inset 2px 5px 20px #555;
-   border-radius: 10;
-   background-color: rgb(231, 185, 129);
- }
-
- .div2 {
-   border: 1px solid #ccc;
-   padding: 2%;
-   background-color: rgb(92, 160, 254);
-   text-align: center;
-   margin: 1%;
-   width:48%;
-   color: rgb(201, 76, 76);
- }
- #gallerywrapper {
-  width:640px;
-  height:450px;
-  margin:0 auto;
-  position:relative;
-  font-family:verdana, arial, sans-serif;
-} 
-
-#gallerywrapper #gallery {
-  position:absolute;
-  left:0;
-  top:0;
-  height:450px;
-  width:640px;
-  overflow:hidden;
-  text-align:center;
-} 
-
-#gallerywrapper #gallery div {
-  width:640px; height:900px; 
-  padding-top:10px; 
-  position:relative;
-} 
-
-#gallerywrapper #gallery div img {
-  clear:both; 
-  display:block; 
-  margin:0 auto; 
-  border:0;
-} 
-
-#gallerywrapper #gallery div h3 {
-  padding:10px 0 0 0; 
-  margin:0; 
-  font-size:18px;
-} 
-
-#gallerywrapper #gallery div p {
-  padding:5px 0; 
-  margin:0; 
-  font-size:12px; 
-  line-height:18px;
-} 
-
-#gallery .previous{ 
-  display:inline;
-  float:left;
-  margin-left:80px;
-  text-decoration:none;
-} 
-
-#gallery .next{ 
-  display:inline;
-  float:right;
-  margin-right:80px;
-  text-decoration:none;
-}
-
-
-.panel {
-  background-color: grey;
-  width: 100%;
-  height: 4%;
-  position: relative;
-  border: 1px solid black;
-}
-.nav {
-  padding: 0;
-  margin: 0;
-  
-  /* add the following */
-  width:100%;
-  display:flex; 
-  flex-direction:row;
-}
-
-.buttons {
-  display: block;
-  padding: 0px 20px;
-  height: 40px;
-  background-color: #666666;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  text-align: center;
-  line-height: 40px;
-  
-  /* remove your width and float and add the following */
-  flex-grow:1;
-}
+    .description-box {
+        width: 40%; /* Description box takes remaining space */
+        /* Align the description box to the image height if needed with flex properties */
+        align-self: flex-start;
+    } }
