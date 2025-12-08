@@ -36,7 +36,7 @@ body {
 /* Main Content Area */
 main {
     padding: 2rem 5%;
-    max-width: 1200px; /* Optional: cap maximum width for very large screens */
+    max-width: 25%; /* Optional: cap maximum width for very large screens */
     margin: 0 auto; /* Center the content */
 }
 
